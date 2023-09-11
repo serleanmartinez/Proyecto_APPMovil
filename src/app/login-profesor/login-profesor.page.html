@@ -5,11 +5,28 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
- <ion-title><h1>Profesor </h1> </ion-title> 
-  <br/>
-  <ion-input color="warning" label="Usuario" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
-  <br/>
-  <ion-input color="warning" label="Contraseña" label-placement="floating" fill="solid" placeholder="Enter text" type="password"></ion-input>
-  <br/>
-  <ion-button [routerLink]="['/home']" color="warning">Ingresar</ion-button>
+  <!--titulo-->
+  <ion-col>
+    <ion-row class= "ion-justify-content-center">
+      <ion-title><h1>Profesor </h1> </ion-title>
+    </ion-row>
+  </ion-col>
+  <!-- input usuario-->
+  <ion-col>
+    <ion-row>
+      <ion-input color="warning" label="Usuario" label-placement="floating" fill="solid" placeholder="Usuario"></ion-input>
+    </ion-row>
+  </ion-col>
+  <!-- input contraseña-->
+  <ion-col>
+    <ion-row>
+      <ion-input color="warning" label="Contraseña" label-placement="floating" fill="solid" placeholder="Contraseña" type="password"></ion-input>    
+    </ion-row>
+  </ion-col> 
+  <!--boton -->
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <ion-button [routerLink]="['/home']" color="warning">Ingresar</ion-button>
+    </ion-row>
+  </ion-col>
 </ion-content>

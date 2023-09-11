@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'index',
     loadChildren: () => import('./index/index.module').then( m => m.IndexPageModule)
   },
+  {
+    path: 'recuperar-contrasena',
+    loadChildren: () => import('./recuperar-contrasena/recuperar-contrasena.module').then( m => m.RecuperarContrasenaPageModule)
+  },
 
 ];
 
