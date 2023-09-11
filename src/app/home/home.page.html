@@ -1,20 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="warning">
     <ion-title>
-      Blank
+      RegistrAPP
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-title>¡¡Bienvenidos!!</ion-card-title>
+      <ion-card-subtitle>Somos RegistraAPP una apliacion movil para facilitar pasar la asistencia en clases de forma presencial</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content> Elija que usuario es: </ion-card-content>
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/login']" color="warning">Estudiante</ion-button>  
+      </ion-col>
+      <ion-col> 
+        <ion-button [routerLink]="['/login-profesor']" color="warning">Profesor</ion-button>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+  
 </ion-content>
