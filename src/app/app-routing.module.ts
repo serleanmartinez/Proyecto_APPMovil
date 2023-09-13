@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'index-profesor',
     loadChildren: () => import('./index-profesor/index-profesor.module').then( m => m.IndexProfesorPageModule)
   },
+  {
+    path: 'lista',
+    loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
+  },
 
 
 ];

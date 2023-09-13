@@ -17,7 +17,7 @@ export class LoginProfesorPage implements OnInit {
   ngOnInit() {
   }
   validarProfesor() {
-    if (this.pass=='1234' && this.user=='danilo') {
+    if (this.pass=='1234' && this.user=='dan.maldonadog'|| this.pass=='1234' && this.user == 'danilo') {
       this.router.navigate(['/index-profesor']);
      
     } else {
