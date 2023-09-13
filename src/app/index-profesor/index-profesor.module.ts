@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { IndexPageRoutingModule } from './index-routing.module';
+import { IndexProfesorPageRoutingModule } from './index-profesor-routing.module';
 
-import { IndexPage } from './index.page';
+import { IndexProfesorPage } from './index-profesor.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    IndexPageRoutingModule
+    IndexProfesorPageRoutingModule
   ],
-  declarations: [IndexPage]
+  declarations: [IndexProfesorPage]
 })
-export class IndexPageModule {}
+export class IndexProfesorPageModule {}

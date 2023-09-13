@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title color="warning"><ion-text [routerLink]="['/home']">RegistrAPP</ion-text></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title color="warning">¡¡Bienvenidos Sergio!!</ion-card-title>
+      <ion-card-subtitle color="warning">Escane el codigo QR para quedar presente en la lista.</ion-card-subtitle>
+    </ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button color="warning">Escanear</ion-button>  
+        </ion-col>
+        <ion-col> 
+          <ion-button [routerLink]="['/home']" color="warning">Cerrar sesion</ion-button>
+        </ion-col>  
+        </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>

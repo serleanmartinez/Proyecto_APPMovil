@@ -1,38 +1,44 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="warning">
-    <ion-title id="titulos">RegistrAPP</ion-title>
+  <ion-toolbar color="dark">
+    <ion-title color="warning"><ion-text [routerLink]="['/home']">RegistrAPP</ion-text></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!--titulo-->
-  <ion-col>
-    <ion-row class= "ion-justify-content-center">
-      <ion-title><h1>Alumnos </h1> </ion-title>
-    </ion-row>
-  </ion-col>
-  <!-- input usuario-->
-  <ion-col>
-    <ion-row>
-      <ion-input color="warning" label="Usuario" label-placement="floating" fill="solid" placeholder="Usuario"></ion-input>
-    </ion-row>
-  </ion-col>
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>
+        <!--titulo-->
+        <ion-col>
+          <ion-row class= "ion-justify-content-center">
+            <ion-title color="warning"><h1>Alumnos </h1> </ion-title>
+          </ion-row>
+        </ion-col>
+      </ion-card-title>
+    </ion-card-header>
+    <!-- input usuario-->
+    <ion-col>
+      <ion-row class= "ion-justify-content-center">
+        <ion-input style="width: 39vh;" color="warning" label="Usuario" label-placement="stacked" [clearOnEdit]="true"  value="" [(ngModel)]="user" fill="solid" placeholder="Usuario"></ion-input>
+      </ion-row>
+    </ion-col>
   <!-- input contraseña-->
-  <ion-col>
-    <ion-row>
-      <ion-input color="warning" label="Contraseña" label-placement="floating" fill="solid" placeholder="Contraseña" type="password"></ion-input>    
-    </ion-row>
-  </ion-col> 
+    <ion-col>
+      <ion-row class= "ion-justify-content-center" >
+        <ion-input style="width: 39vh;"  color="warning" label="Contraseña" label-placement="stacked" [clearOnEdit]="true"  value="" [(ngModel)]="pass" fill="solid" placeholder="Contraseña" type="password"></ion-input>    
+      </ion-row>
+    </ion-col> 
   <!--boton -->
-  <ion-col>
-    <ion-row class="ion-justify-content-center">
-      <ion-button [routerLink]="['/home']" color="warning">Ingresar</ion-button>
-    </ion-row>
-  </ion-col>
+    <ion-col>
+      <ion-row class="ion-justify-content-center">
+        <ion-button (click)="validarAlumno()" color="warning">Ingresar</ion-button>
+      </ion-row>
+    </ion-col>
   <!--Recuperar contraseña-->
-  <ion-col>
-    <ion-row class="ion-justify-content-center">
-      <ion-text color ="secondary" [routerLink]="['/recuperar-contrasena']"><sub>Recuperar contraseña</sub></ion-text>
-    </ion-row>   
-  </ion-col>
+    <ion-col>
+      <ion-row class="ion-justify-content-center">
+        <ion-text color ="secondary" [routerLink]="['/recuperar-contrasena']"><sub>Recuperar contraseña</sub></ion-text>
+      </ion-row>   
+    </ion-col>  
+  </ion-card> 
 </ion-content>
