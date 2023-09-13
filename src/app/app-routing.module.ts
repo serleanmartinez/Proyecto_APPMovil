@@ -14,18 +14,27 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },  {
+  },
+  {
     path: 'login-profesor',
     loadChildren: () => import('./login-profesor/login-profesor.module').then( m => m.LoginProfesorPageModule)
   },
   {
-    path: 'index',
-    loadChildren: () => import('./index/index.module').then( m => m.IndexPageModule)
-  },
-  {
     path: 'recuperar-contrasena',
     loadChildren: () => import('./recuperar-contrasena/recuperar-contrasena.module').then( m => m.RecuperarContrasenaPageModule)
+  },  {
+    path: 'index-alumno',
+    loadChildren: () => import('./index-alumno/index-alumno.module').then( m => m.IndexAlumnoPageModule)
   },
+  {
+    path: 'index-profesor',
+    loadChildren: () => import('./index-profesor/index-profesor.module').then( m => m.IndexProfesorPageModule)
+  },
+  {
+    path: 'lista',
+    loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
+  },
+
 
 ];
 

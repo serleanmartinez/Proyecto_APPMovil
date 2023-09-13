@@ -1,31 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-title color="warning"> RegistrAPP </ion-title>
+    <ion-title color="warning"><ion-text [routerLink]="['/home']">RegistrAPP</ion-text></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-card color="dark">
     <ion-card-header>
-      <ion-card-title color="warning">¡¡Bienvenidos!!</ion-card-title>
-      <ion-card-subtitle color="warning">Somos RegistraAPP una apliacion movil para facilitar pasar la asistencia en clases de forma presencial.</ion-card-subtitle>
+      <ion-card-title color="warning">¡¡Bienvenidos Sergio!!</ion-card-title>
+      <ion-card-subtitle color="warning">Escane el codigo QR para quedar presente en la lista.</ion-card-subtitle>
     </ion-card-header>
-    <ion-card-content color="warning"> Elija que usuario es: </ion-card-content>
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-button [routerLink]="['/login']" color="warning">Estudiante</ion-button>  
+          <ion-button color="warning">Escanear</ion-button>  
         </ion-col>
         <ion-col> 
-          <ion-button [routerLink]="['/login-profesor']" color="warning">Profesor</ion-button>
+          <ion-button [routerLink]="['/home']" color="warning">Cerrar sesion</ion-button>
         </ion-col>  
         </ion-row>
     </ion-grid>
   </ion-card>
-  
+  <ion-card class="container end">
   <div class="container end">
     <ion-img src="https://www.duoc.cl/wp-content/themes/wordpress-duoc-cl/images/acreditacion.png" style="height: 5vh; max-width: auto; background-color: rgba(254, 174, 0, 0.787);">
     </ion-img>
-  </div> 
+  </div>
+</ion-card> 
   
 </ion-content>

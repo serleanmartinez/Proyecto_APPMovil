@@ -1,13 +1,47 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Recuperar_contrasena</ion-title>
+  <ion-toolbar color="dark">
+    <ion-title color="warning"><ion-text [routerLink]="['/home']">RegistrAPP</ion-text></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Recuperar_contrasena</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card color="dark">
+    <!--cabeza de la carta-->
+    <ion-card-header>
+      <ion-card-title> 
+        <ion-row class= "ion-justify-content-center">
+        <h1>Recuperación de contraseña</h1>
+        </ion-row>
+      </ion-card-title>
+      <ion-card-subtitle> 
+        <ion-row class= "ion-justify-content-center">
+         Por favor ingrese su nombre de usuario y se le enviara un correo con la contraseña nueva.
+        </ion-row>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <!--contenido de la carta-->
+    <ion-card-content>
+      <ion-col>
+        <ion-row class="ion-justify-content-center">
+          <ion-input style="width: 39vh;" color="warning" label="Usuario" label-placement="floating" fill="solid" placeholder="Usuario"></ion-input>
+        </ion-row>
+      </ion-col>
+    </ion-card-content>
+    <!--boton-->
+    <ion-col>
+      <ion-row class= "ion-justify-content-center">
+        <div class="container">
+          <ion-button id="present-alert" [routerLink]="['/home']" color="warning">RECUPERAR</ion-button>
+          <ion-alert
+            trigger="present-alert"
+            header="ENVIADO"
+            subHeader="correo: *******@duocuc.cl"
+            message="recibirá en su correo su nueva contraseña temporal"
+            [buttons]="alertButtons">
+          </ion-alert>
+        </div>
+      </ion-row>
+    </ion-col>
+  </ion-card>
+ 
 </ion-content>

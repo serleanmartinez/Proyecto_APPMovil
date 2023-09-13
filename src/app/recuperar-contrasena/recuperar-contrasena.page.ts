@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecuperarContrasenaPage implements OnInit {
 
+  public alertButtons = ['OK'];
+  
   constructor() { }
 
   ngOnInit() {
